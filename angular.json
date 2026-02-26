@@ -3,11 +3,11 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "analytics": "8d7e064f-7c92-441a-ab17-fbc0dd7caa15"
+    "analytics": "8b65b712-492f-4181-977c-93727d86d7bd"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "E-commerece": {
+    "lazy-loading": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -26,11 +26,7 @@
               }
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
-            ],
-            "polyfills": [
-              "@angular/localize/init"
             ]
           },
           "configurations": {
@@ -61,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "E-commerece:build:production"
+              "buildTarget": "lazy-loading:build:production"
             },
             "development": {
-              "buildTarget": "E-commerece:build:development"
+              "buildTarget": "lazy-loading:build:development"
             }
           },
           "defaultConfiguration": "development"
